@@ -48,7 +48,6 @@ class DB:
             "CREATE TABLE IF NOT EXISTS esp32temphumi (id serial PRIMARY KEY, type TEXT, value FLOAT, posting_date timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP)"
         )
 
-
     def insert(self, typez, valuez):
 
         "Метод создания новой сторки на новый день"
